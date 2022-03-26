@@ -20,7 +20,7 @@ func _physics_process(delta):
 		motion.x = max(motion.x - ACCELERATION, -MAX_SPEED)
 	else:
 		friction = true
-		#animationPlayer.play("Idle")
+		animationPlayer.play("Idle") #this is the error
 	if is_on_floor():
 		if Input.is_action_just_pressed("ui_accept"):
 			motion.y = JUMP_M
